@@ -1,0 +1,112 @@
+$white: #fff;
+$black: #2E2E2E;
+$grey: #d9d9d9;
+$grey-2: #aeaeae;
+$black-alt: #282828;
+$grey-btn: #ACADB8;
+$light-grey: #ECECEC;
+$dark-blue: #224771;
+$dark-blue-2: #1b6b94;
+$blue: #0089C4;
+$blue-light: #c2e7fb;
+
+
+$pink: #f4a3b4;
+$pink-2: #df7f93;
+$pink-3: #f4a3b4;
+
+$blue-title: #0089c4;
+
+$light-yellow: #ffe040;
+$yellow: #FFD600;
+
+$box-color : 5px 5px 15px 0px rgba(0,0,0, 0.2);
+
+.bg-pink {
+	background: $pink-3; 
+}
+
+.bg-green-light {
+	background: #f8ffee;
+}
+
+.bg-grey {
+	background: $grey;
+}
+
+.bg-blue-light {
+	background: $blue-light;
+}
+
+.bg-dark-blue {
+	background: $dark-blue;
+}
+
+.bg-dark {
+	background: $black-alt;
+}
+
+.bg-white-grey {
+	background: rgb(239,239,239);
+}
+
+.bg-white-grey-min {
+	background: rgb(239,239,239);
+	background: linear-gradient(0deg, rgba(239,239,239,1) 25%, rgba(255,255,255,1) 25%);
+}
+
+.bg-blue-grad {
+	background: linear-gradient(289.79deg, #307AC4 0%, #359BFF 80.84%);
+	box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.grey{
+	color:#cccccc !important;
+}
+
+.black{
+	color:$black ;
+}
+
+.bg-black {
+	background: #141414;
+}
+
+.border-bottom-grey{
+	border-bottom:1px dotted #cccccc;
+}
+
+.btn-gold{
+	background-color: #bfa563;
+}
+
+.border-bottom-solid-grey{
+	border-bottom: 1px solid #efefef;
+}
+
+.has-background-gray{
+	background-color: $grey;
+}
+
+.has-background-light-gray{
+	background-color: $light-grey;
+}
+
+.btn-yellow{
+	background: $yellow;
+	color:$black;
+}
+
+.btn-blue{
+	background: $blue;
+	color: $white;
+	line-height: 1;
+	border: unset;
+	padding: 0;
+	font-size: 0.9rem;
+	min-height: 2.8rem;
+	&:hover{
+		color: $white;
+	}
+}
+

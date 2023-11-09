@@ -1,0 +1,13 @@
+{
+  "type": "project",
+  "require": {
+    "contentful/contentful": "6.1.0",
+    "contentful/contentful-management": "3.1.4",
+		"altorouter/altorouter": "1.1.0",
+		"cebe/markdown": "~1.2.0",
+		"sendgrid/sendgrid": "~5.1",
+    "fightbulc/moment": "^1.32",
+    "rafaelwendel/phpsupabase": "^0.0.2"
+    
+  }
+}

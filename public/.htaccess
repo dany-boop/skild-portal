@@ -1,0 +1,59 @@
+RewriteEngine On
+#RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+#RewriteRule ^(.*)$ http://%1%{REQUEST_URI} [R=301,QSA,NC,L]
+
+RewriteCond %{HTTP_HOST} ^www.%{HTTP_HOST}
+RewriteRule ^(.*)$ https://%1%{REQUEST_URI} [R=301,QSA,NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule . index.php [L]
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^shop\.momuung\.id  [NC]
+RewriteRule ^(.*) http://momuung.id/$1 [L,R=301]
+
+Redirect 301 https://momuung.id/wa/sby https://momuung.id/wa/surabaya
+
+Redirect 301 https://shop.momuung.id/products/mom-uung-asi-booster-pelancar-asi-30-capsul https://momuung.id/p/asi-booster-pelancar-asi-mom-uung
+
+Redirect 301 https://shop.momuung.id/products/kantong-asi-pre-sterilized-breast-milk-bag-100ml https://momuung.id/p/asi-bag-mom-uung
+
+Redirect 301 https://shop.momuung.id/products/mom-uung-pompa-asi-portable-elektrik-mom-uung-super-praktis https://momuung.id/p/breast-pump-pompa-asi-mom-uung
+
+Redirect 301 https://shop.momuung.id https://momuung.id
+
+<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|swf|svg|eot|woff|woff2)$">
+Header set Cache-Control "max-age=604800, public"
+</FilesMatch>
+
+<IfModule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE text/javascript
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE image/x-icon
+AddOutputFilterByType DEFLATE image/svg+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/x-font
+AddOutputFilterByType DEFLATE application/x-font-truetype
+AddOutputFilterByType DEFLATE application/x-font-ttf
+AddOutputFilterByType DEFLATE application/x-font-otf
+AddOutputFilterByType DEFLATE application/x-font-opentype
+AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
+AddOutputFilterByType DEFLATE font/ttf
+AddOutputFilterByType DEFLATE font/otf
+AddOutputFilterByType DEFLATE font/opentype
+# For Older Browsers Which Can't Handle Compression
+BrowserMatch ^Mozilla/4 gzip-only-text/html
+BrowserMatch ^Mozilla/4\.0[678] no-gzip
+BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+</IfModule>
+
+<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf|svg|eot|woff|woff2)$">
+Header set Cache-Control "max-age=604800, public"
+</FilesMatch>

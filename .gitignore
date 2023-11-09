@@ -1,0 +1,13 @@
+# These are some examples of commonly ignored file patterns.
+.DS_Store
+*.rdb
+*.sass-cache*
+*.log
+vendor/
+composer.lock
+public/vendor/
+public/composer.lock
+public/assets/uploads/
+public/process/
+public/process.php
+public/process-init.php
